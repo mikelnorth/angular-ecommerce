@@ -1,0 +1,7 @@
+<h1>{{productCtrl.product.name}}</h1>
+<div class="picture" ng-style="{backgroundImage: 'url(' + productCtrl.product.imageUrl + ')'}"></div>
+<div class="padded">
+    {{productCtrl.product.description}} <br/> 
+    Price: {{productCtrl.product.price | currency}}<br/>
+    <button ng-click="productCtrl.buttonAction()">{{productCtrl.buttonLabel}}</button>
+</div>

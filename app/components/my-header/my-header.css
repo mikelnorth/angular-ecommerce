@@ -1,9 +1,11 @@
-/*my-header {
+my-header {
   display: flex;
   align-content: flex-end;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  background: rgb(82, 75, 75);
+  margin-bottom: 20px;
 }
 
 my-header a{
@@ -11,4 +13,10 @@ my-header a{
   display: inline-block;
   margin-left: 40px;
   font-family: sans-serif;
-}*/
+  text-decoration: none;
+  color: white;
+}
+
+my-header a:hover{
+  color: rgba(255, 255, 255, 0.479);
+}

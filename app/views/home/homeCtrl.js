@@ -1,6 +1,10 @@
-angular.module('ecommerce').controller('homeCtrl', function($scope, productSrvc){
+angular.module('ecommerce').controller('homeCtrl', function($scope, productSrvc, cartSrvc){
   // This will load up our dailyDealts on the $scope
   productSrvc.getDailyDeals().then(products=>{
     $scope.products = products;
   });
+
+  $scope.addItem = function(item){
+    cartSrvc.addItem(item);
+  }
 })
